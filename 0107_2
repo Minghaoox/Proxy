@@ -46,7 +46,7 @@ proxies:
   - {name: David_NL_754 |38.91Mb, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: David_Pool_🇳🇱NL_372, server: 85.208.108.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: David_US_1255 |22.16Mb, server: ah.emoooo.club, port: 18780, type: ss, cipher: chacha20-ietf-poly1305, password: 97239aa5-913f-44b6-bad1-1d88e9a605b9, udp: true}
-  - {name: David_US_1760 |79.95Mb, server: ah.emoooo.club, port: 42135, type: ss, cipher: chacha20-ietf-poly1305, password: 97239aa5-913f-44b6-bad1-1d88e9a605b9, udp: true}
+  - {name: new_David_US_1760 |79.95Mb, server: ah.emoooo.club, port: 42135, type: ss, cipher: chacha20-ietf-poly1305, password: 97239aa5-913f-44b6-bad1-1d88e9a605b9, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
