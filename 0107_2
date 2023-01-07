@@ -17,7 +17,6 @@ proxies:
   - {name: David_US_1912 |17.02Mb, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, sni: tj2.dalazhi.cyou, skip-cert-verify: true, udp: true}
   - {name: David_Relay_🇨🇳CN-🇷🇺RU_42, server: 20011.purefast2.com, port: 20011, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
   - {name: David_CN_60 | 3.88Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: David_CN_61 | 1.92Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: David_CN_62 |20.55Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: David_CN_65 |18.18Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: David_CN_66 | 5.65Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
