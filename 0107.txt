@@ -5,49 +5,49 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: BG_6, server: gcorepl.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcoreplnode, ws-headers: {Host: gcorepl.sylu.cyou}, udp: true}
-  - {name: US_73, server: 51fly99.win, port: 443, type: vmess, uuid: fefe2ff7-153c-41a8-aa04-e8d2e641505c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: 51fly99.win}, udp: true}
-  - {name: US_1816 |14.86Mb, server: juzi3.82a.xyz, port: 443, type: vmess, uuid: 3d6bb1ca-0ec5-4c7c-a54b-50c72aadb8a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: juzi3.82a.xyz}, udp: true}
-  - {name: US_1819 |21.95Mb, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /huhu, ws-headers: {Host: hucloud.tk}, udp: true}
-  - {name: CN_13, server: gb1.v2.zz.cn.fuckword.club, port: 47836, type: vmess, uuid: 000f47ab-2900-3ae8-b2c8-fa8d062be3c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_97 | 4.04Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE_258, server: 141.95.61.209, port: 1145, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
-  - {name: GB_426 | 4.49Mb, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: RU_845 | 2.50Mb, server: eu-east-ruo.openssl3.com, port: 443, type: trojan, password: 9KogHwaY7hVD, sni: eu-east-ruo.openssl3.com, skip-cert-verify: true, udp: true}
-  - {name: US_1912 |17.02Mb, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, sni: tj2.dalazhi.cyou, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇷🇺RU_42, server: 20011.purefast2.com, port: 20011, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_60 | 3.88Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_61 | 1.92Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_62 |20.55Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_65 |18.18Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_66 | 5.65Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_69 |10.89Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_73 | 4.61Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_74 | 2.15Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_75 | 3.95Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_78 |15.72Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_80 | 1.12Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_81 | 3.53Mb, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_82 | 7.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_86 | 6.04Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_87 | 8.49Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_89 | 1.10Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_91 | 5.69Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_92 | 7.52Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_93 | 5.33Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_95 | 8.53Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_31, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: AU_03 |59.42Mb, server: 43.207.0.146, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: AU_04 |13.33Mb, server: 43.206.209.17, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: AU_06 | 6.79Mb, server: 43.207.82.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_1254 |31.28Mb, server: 13.214.210.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_1361 |306.94Mb, server: 13.215.173.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_1524 |45.80Mb, server: 13.215.159.84, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_1525 |471.05Mb, server: 13.215.173.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: NL_754 |38.91Mb, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱NL_372, server: 85.208.108.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1255 |22.16Mb, server: ah.emoooo.club, port: 18780, type: ss, cipher: chacha20-ietf-poly1305, password: 97239aa5-913f-44b6-bad1-1d88e9a605b9, udp: true}
-  - {name: US_1760 |79.95Mb, server: ah.emoooo.club, port: 42135, type: ss, cipher: chacha20-ietf-poly1305, password: 97239aa5-913f-44b6-bad1-1d88e9a605b9, udp: true}
+  - {name: David_BG_6, server: gcorepl.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcoreplnode, ws-headers: {Host: gcorepl.sylu.cyou}, udp: true}
+  - {name: David_US_73, server: 51fly99.win, port: 443, type: vmess, uuid: fefe2ff7-153c-41a8-aa04-e8d2e641505c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: 51fly99.win}, udp: true}
+  - {name: David_US_1816 |14.86Mb, server: juzi3.82a.xyz, port: 443, type: vmess, uuid: 3d6bb1ca-0ec5-4c7c-a54b-50c72aadb8a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: juzi3.82a.xyz}, udp: true}
+  - {name: David_US_1819 |21.95Mb, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /huhu, ws-headers: {Host: hucloud.tk}, udp: true}
+  - {name: David_CN_13, server: gb1.v2.zz.cn.fuckword.club, port: 47836, type: vmess, uuid: 000f47ab-2900-3ae8-b2c8-fa8d062be3c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: David_CN_97 | 4.04Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: David_DE_258, server: 141.95.61.209, port: 1145, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
+  - {name: David_GB_426 | 4.49Mb, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: David_RU_845 | 2.50Mb, server: eu-east-ruo.openssl3.com, port: 443, type: trojan, password: 9KogHwaY7hVD, sni: eu-east-ruo.openssl3.com, skip-cert-verify: true, udp: true}
+  - {name: David_US_1912 |17.02Mb, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, sni: tj2.dalazhi.cyou, skip-cert-verify: true, udp: true}
+  - {name: David_Relay_🇨🇳CN-🇷🇺RU_42, server: 20011.purefast2.com, port: 20011, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: David_CN_60 | 3.88Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_61 | 1.92Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_62 |20.55Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_65 |18.18Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_66 | 5.65Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_69 |10.89Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_73 | 4.61Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_74 | 2.15Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_75 | 3.95Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_78 |15.72Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_80 | 1.12Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_81 | 3.53Mb, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_82 | 7.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_86 | 6.04Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_87 | 8.49Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_89 | 1.10Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_91 | 5.69Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_92 | 7.52Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_93 | 5.33Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_95 | 8.53Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_CN_31, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: David_AU_03 |59.42Mb, server: 43.207.0.146, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: David_AU_04 |13.33Mb, server: 43.206.209.17, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: David_AU_06 | 6.79Mb, server: 43.207.82.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: David_US_1254 |31.28Mb, server: 13.214.210.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: David_US_1361 |306.94Mb, server: 13.215.173.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: David_US_1524 |45.80Mb, server: 13.215.159.84, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: David_US_1525 |471.05Mb, server: 13.215.173.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: David_NL_754 |38.91Mb, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: David_Pool_🇳🇱NL_372, server: 85.208.108.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: David_US_1255 |22.16Mb, server: ah.emoooo.club, port: 18780, type: ss, cipher: chacha20-ietf-poly1305, password: 97239aa5-913f-44b6-bad1-1d88e9a605b9, udp: true}
+  - {name: David_US_1760 |79.95Mb, server: ah.emoooo.club, port: 42135, type: ss, cipher: chacha20-ietf-poly1305, password: 97239aa5-913f-44b6-bad1-1d88e9a605b9, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
