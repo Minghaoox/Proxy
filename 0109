@@ -1,4 +1,4 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
@@ -6,36 +6,13 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: CN_135 | 4.04Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU_12 | 9.03Mb, server: 43.201.59.236, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: CA_56 | 8.41Mb, server: 72.140.224.195, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CN_98 | 8.49Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_99 | 8.54Mb, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_105 | 5.69Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_108 | 3.53Mb, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_109 | 1.12Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_115 | 3.88Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_116 | 1.92Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_118 |20.55Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_120 | 6.04Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_121 | 8.53Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_122 |10.89Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_124 | 7.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_126 | 3.95Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_128 | 2.15Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_129 | 4.61Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_132 | 5.65Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: NL_838 |42.99Mb, server: 85.208.108.60, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1249 |13.86Mb, server: 38.91.102.123, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: US_1250 |23.30Mb, server: 172.99.188.99, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: US_1271 |23.77Mb, server: 172.99.188.99, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: US_1475 |23.33Mb, server: 172.99.188.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
   - {name: US_1623 |11.70Mb, server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1694 |314.76Mb, server: 13.214.212.124, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: US_1802 |21.02Mb, server: 172.99.188.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1807 |152.07Mb, server: 13.215.173.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_1944 |20.69Mb, server: 172.99.188.99, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2006 |201.04Mb, server: 13.215.178.204, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: ZZ_2440 | 6.57Mb, server: 103.168.56.77, port: 443, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -43,72 +20,26 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -116,36 +47,13 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -165,36 +73,13 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -206,72 +91,26 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -279,36 +118,13 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -325,36 +141,13 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - CN_135 | 4.04Mb
-      - AU_12 | 9.03Mb
       - CA_56 | 8.41Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 8.54Mb
-      - CN_105 | 5.69Mb
-      - CN_108 | 3.53Mb
-      - CN_109 | 1.12Mb
-      - CN_115 | 3.88Mb
-      - CN_116 | 1.92Mb
-      - CN_118 |20.55Mb
-      - CN_120 | 6.04Mb
-      - CN_121 | 8.53Mb
-      - CN_122 |10.89Mb
-      - CN_124 | 7.36Mb
-      - CN_126 | 3.95Mb
-      - CN_128 | 2.15Mb
-      - CN_129 | 4.61Mb
-      - CN_132 | 5.65Mb
       - NL_838 |42.99Mb
-      - US_1249 |13.86Mb
       - US_1250 |23.30Mb
       - US_1271 |23.77Mb
       - US_1475 |23.33Mb
       - US_1623 |11.70Mb
-      - US_1694 |314.76Mb
       - US_1802 |21.02Mb
-      - US_1807 |152.07Mb
-      - US_1944 |20.69Mb
-      - US_2006 |201.04Mb
-      - ZZ_2440 | 6.57Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9311,6 +9104,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9380,6 +9175,8 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9424,6 +9221,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9510,6 +9308,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9610,15 +9409,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9636,6 +9434,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9649,11 +9448,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9662,16 +9464,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9704,6 +9526,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9754,11 +9577,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9827,7 +9653,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -9921,7 +9746,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -9947,6 +9771,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10036,6 +9861,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10051,6 +9877,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10167,20 +9994,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10188,12 +10028,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10349,19 +10187,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10441,6 +10271,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10485,8 +10316,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10509,6 +10338,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
