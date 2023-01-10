@@ -1,155 +1,135 @@
-port: 7890
+﻿port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "", server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vuk2.0bad.com}, udp: true}
-  - {name: CN_133 | 4.04Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25259, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: content-provider4.cdn-delivery.akamaicd.com:443, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: uk1.trojanvh.xyz:80, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, sni: uk1.trojanvh.xyz, skip-cert-verify: true, udp: true}
-  - {name: 119-8-122-159.ipv4.rush.ml:8443, server: 119-8-122-159.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 119-8-122-159.ipv4.rush.ml, skip-cert-verify: true, udp: true}
-  - {name: CN_97 | 8.54Mb, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_98 | 8.49Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_99 | 6.04Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_101 | 3.53Mb, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_102 | 1.12Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_104 |15.72Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_106 |18.18Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_107 | 3.88Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_109 |20.55Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_111 | 5.65Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_112 | 8.53Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_113 |10.89Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_115 | 4.61Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_116 | 7.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_119 | 8.53Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_121 | 1.10Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_123 | 5.69Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_124 | 7.52Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_125 | 3.95Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_126 | 5.33Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_130 | 2.15Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: DE_350, server: 141.95.61.209, port: 1145, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
-  - {name: US_1422 |20.25Mb, server: 172.99.188.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1747 |17.75Mb, server: 13.215.173.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_1823 |18.40Mb, server: 172.99.188.99, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2046 |49.79Mb, server: 13.215.178.204, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: VN 1 → tg@nicevpn123, server: 103.82.24.79, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tandung288.click, ws-headers: {Host: 103.82.24.79}, udp: true}
+  - {name: RU 1 → tg@nicevpn123, server: gcsshkk.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcsshkknode, ws-headers: {Host: gcsshkk.sylu.cyou}, udp: true}
+  - {name: SG 30 → tg@nicevpn123, server: 139.99.45.193, port: 80, type: vmess, uuid: 98958185-8b1b-4718-9578-a13460c53b6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 139.99.45.193}, udp: true}
+  - {name: SG 31 → tg@nicevpn123, server: 139.99.61.154, port: 80, type: vmess, uuid: 827d6917-6bcd-4932-aefd-87e945652952, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 139.99.61.154}, udp: true}
+  - {name: SG 34 → tg@nicevpn123, server: 139.99.61.53, port: 80, type: vmess, uuid: 60f30e26-0af7-4b64-ba94-71450ed77e23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 139.99.61.53}, udp: true}
+  - {name: US 10 → tg@nicevpn123, server: v125.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usv125N93nz6Py, ws-headers: {Host: v125.toddns.tk}, udp: true}
+  - {name: CN 30 → tg@nicevpn123, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA 1 → tg@nicevpn123, server: 72.140.224.195, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CN 1 → tg@nicevpn123, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 15 → tg@nicevpn123, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 17 → tg@nicevpn123, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 20 → tg@nicevpn123, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 5 → tg@nicevpn123, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: DE 1 → tg@nicevpn123, server: 141.95.61.209, port: 1145, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
+  - {name: DE 2 → tg@nicevpn123, server: 141.95.61.209, port: 1145, type: trojan, password: 23a044ef-1f8e-44ec-92be-78395a09f15c, skip-cert-verify: true, udp: true}
+  - {name: DE 3 → tg@nicevpn123, server: 141.95.61.209, port: 1145, type: trojan, password: e45b7759-6512-487b-ab20-22da1f46255f, skip-cert-verify: true, udp: true}
+  - {name: DE 4 → tg@nicevpn123, server: 141.95.61.209, port: 1145, type: trojan, password: 6416f8c6-8db1-4b59-a0af-09d58d7eb19b, skip-cert-verify: true, udp: true}
+  - {name: DE 5 → tg@nicevpn123, server: 141.95.61.209, port: 1145, type: trojan, password: 414583b6-1d14-49f4-9988-9d6849efb420, skip-cert-verify: true, udp: true}
+  - {name: GB 2 → tg@nicevpn123, server: 51.38.71.175, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, skip-cert-verify: true, udp: true}
+  - {name: GB 3 → tg@nicevpn123, server: 51.38.71.175, port: 80, type: trojan, password: 63bdf871-b985-4955-86cf-7f391c1667ce, skip-cert-verify: true, udp: true}
+  - {name: GB 4 → tg@nicevpn123, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, sni: uk1.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP 83 → tg@nicevpn123, server: 43.206.223.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US 2 → tg@nicevpn123, server: 172.99.188.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US 4 → tg@nicevpn123, server: 13.215.173.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US 5 → tg@nicevpn123, server: 172.99.188.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US 6 → tg@nicevpn123, server: 172.99.188.99, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US 7 → tg@nicevpn123, server: 172.99.188.99, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -168,38 +148,33 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -210,113 +185,98 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -332,38 +292,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ""
-      - CN_133 | 4.04Mb
-      - 14.29.124.168:25259
-      - content-provider4.cdn-delivery.akamaicd.com:443
-      - uk1.trojanvh.xyz:80
-      - 119-8-122-159.ipv4.rush.ml:8443
-      - CN_97 | 8.54Mb
-      - CN_98 | 8.49Mb
-      - CN_99 | 6.04Mb
-      - CN_101 | 3.53Mb
-      - CN_102 | 1.12Mb
-      - CN_104 |15.72Mb
-      - CN_106 |18.18Mb
-      - CN_107 | 3.88Mb
-      - CN_109 |20.55Mb
-      - CN_111 | 5.65Mb
-      - CN_112 | 8.53Mb
-      - CN_113 |10.89Mb
-      - CN_115 | 4.61Mb
-      - CN_116 | 7.36Mb
-      - CN_119 | 8.53Mb
-      - CN_121 | 1.10Mb
-      - CN_123 | 5.69Mb
-      - CN_124 | 7.52Mb
-      - CN_125 | 3.95Mb
-      - CN_126 | 5.33Mb
-      - CN_130 | 2.15Mb
-      - DE_350
-      - US_1422 |20.25Mb
-      - US_1747 |17.75Mb
-      - US_1823 |18.40Mb
-      - US_2046 |49.79Mb
+      - VN 1 → tg@nicevpn123
+      - RU 1 → tg@nicevpn123
+      - SG 30 → tg@nicevpn123
+      - SG 31 → tg@nicevpn123
+      - SG 34 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - CN 30 → tg@nicevpn123
+      - CA 1 → tg@nicevpn123
+      - CN 1 → tg@nicevpn123
+      - CN 15 → tg@nicevpn123
+      - CN 17 → tg@nicevpn123
+      - CN 20 → tg@nicevpn123
+      - CN 5 → tg@nicevpn123
+      - DE 1 → tg@nicevpn123
+      - DE 2 → tg@nicevpn123
+      - DE 3 → tg@nicevpn123
+      - DE 4 → tg@nicevpn123
+      - DE 5 → tg@nicevpn123
+      - GB 2 → tg@nicevpn123
+      - GB 3 → tg@nicevpn123
+      - GB 4 → tg@nicevpn123
+      - JP 83 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 4 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
