@@ -1,135 +1,155 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_40 | 8.41Mb, server: 72.140.224.195, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CN_86 | 2.15Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_89 | 5.33Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_91 |15.72Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_92 | 7.52Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_95 | 3.95Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_97 | 4.61Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_101 | 5.69Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_102 | 8.53Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_103 | 5.65Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_105 |20.55Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_106 | 1.92Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "", server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vuk2.0bad.com}, udp: true}
+  - {name: CN_133 | 4.04Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 14.29.124.168:25259, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: content-provider4.cdn-delivery.akamaicd.com:443, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: uk1.trojanvh.xyz:80, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, sni: uk1.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: 119-8-122-159.ipv4.rush.ml:8443, server: 119-8-122-159.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 119-8-122-159.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: CN_97 | 8.54Mb, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_98 | 8.49Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_99 | 6.04Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_101 | 3.53Mb, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_102 | 1.12Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_104 |15.72Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_106 |18.18Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_107 | 3.88Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_108 |18.18Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_111 | 1.12Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_112 | 6.04Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_114 | 1.10Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_115 | 8.53Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_118 | 8.54Mb, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_119 | 8.49Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_120 |10.89Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_121 | 7.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_165 |21.32Mb, server: 20005.purefast2.com, port: 20005, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: DE_326, server: 141.95.61.209, port: 1145, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
-  - {name: NL_672 |42.99Mb, server: 85.208.108.60, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1376 |21.13Mb, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: US_1641 |314.76Mb, server: 13.214.212.124, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: CN_109 |20.55Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_111 | 5.65Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_112 | 8.53Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_113 |10.89Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_115 | 4.61Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_116 | 7.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_119 | 8.53Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_121 | 1.10Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_123 | 5.69Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_124 | 7.52Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_125 | 3.95Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_126 | 5.33Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_130 | 2.15Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: DE_350, server: 141.95.61.209, port: 1145, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
+  - {name: US_1422 |20.25Mb, server: 172.99.188.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_1747 |17.75Mb, server: 13.215.173.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US_1823 |18.40Mb, server: 172.99.188.99, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2046 |49.79Mb, server: 13.215.178.204, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -148,33 +168,38 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -185,98 +210,113 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -292,33 +332,38 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_40 | 8.41Mb
-      - CN_86 | 2.15Mb
-      - CN_89 | 5.33Mb
-      - CN_91 |15.72Mb
-      - CN_92 | 7.52Mb
-      - CN_95 | 3.95Mb
-      - CN_97 | 4.61Mb
-      - CN_101 | 5.69Mb
-      - CN_102 | 8.53Mb
-      - CN_103 | 5.65Mb
-      - CN_105 |20.55Mb
-      - CN_106 | 1.92Mb
+      - ""
+      - CN_133 | 4.04Mb
+      - 14.29.124.168:25259
+      - content-provider4.cdn-delivery.akamaicd.com:443
+      - uk1.trojanvh.xyz:80
+      - 119-8-122-159.ipv4.rush.ml:8443
+      - CN_97 | 8.54Mb
+      - CN_98 | 8.49Mb
+      - CN_99 | 6.04Mb
+      - CN_101 | 3.53Mb
+      - CN_102 | 1.12Mb
+      - CN_104 |15.72Mb
+      - CN_106 |18.18Mb
       - CN_107 | 3.88Mb
-      - CN_108 |18.18Mb
-      - CN_111 | 1.12Mb
-      - CN_112 | 6.04Mb
-      - CN_114 | 1.10Mb
-      - CN_115 | 8.53Mb
-      - CN_118 | 8.54Mb
-      - CN_119 | 8.49Mb
-      - CN_120 |10.89Mb
-      - CN_121 | 7.36Mb
-      - CN_165 |21.32Mb
-      - DE_326
-      - NL_672 |42.99Mb
-      - US_1376 |21.13Mb
-      - US_1641 |314.76Mb
+      - CN_109 |20.55Mb
+      - CN_111 | 5.65Mb
+      - CN_112 | 8.53Mb
+      - CN_113 |10.89Mb
+      - CN_115 | 4.61Mb
+      - CN_116 | 7.36Mb
+      - CN_119 | 8.53Mb
+      - CN_121 | 1.10Mb
+      - CN_123 | 5.69Mb
+      - CN_124 | 7.52Mb
+      - CN_125 | 3.95Mb
+      - CN_126 | 5.33Mb
+      - CN_130 | 2.15Mb
+      - DE_350
+      - US_1422 |20.25Mb
+      - US_1747 |17.75Mb
+      - US_1823 |18.40Mb
+      - US_2046 |49.79Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
